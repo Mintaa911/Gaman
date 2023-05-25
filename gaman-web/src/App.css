@@ -1,0 +1,86 @@
+.container{
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.inner-container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+nav{
+  width: 100%;
+  position: relative;
+  height: 60px;
+  background-color: #FFFFFF;
+  box-shadow:0px 3px 9px rgba(0, 0, 0, 0.102);
+  margin-bottom: 40px;
+}
+#navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo{
+  flex-grow: 3;
+  margin-top: 1%;
+
+}
+
+
+#links{
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-left: 10%;
+}
+
+#btnContainer{
+  flex-grow:1;
+  position: relative;
+}
+
+.customBtn{
+  background-color: #E50F1C; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
+  
+
+}
+
+/* unvisited link */
+a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:link {
+
+}
+
+/* visited link */
+/* a:visited {
+  border-bottom: 2px solid green;
+} */
+
+/* mouse over link */
+/* a:hover {
+  color: hotpink;
+} */
+
+/* selected link */
+ a.active {
+  border-bottom: 2px solid red;
+  
+}
+
+
