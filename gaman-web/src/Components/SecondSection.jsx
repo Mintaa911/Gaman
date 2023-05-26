@@ -2,6 +2,11 @@ import React from "react";
 import homeScreen from "../assets/homeScreen.png";
 import star from "../assets/star.png";
 import fadeStar from "../assets/fadeStar.svg";
+import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
+import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import StepCard from "./SecondSection/StepCard";
 
 const SecondSection = () => {
 	return (
@@ -9,9 +14,7 @@ const SecondSection = () => {
 			style={{
 				display: "flex",
 				flexDirection: "row",
-				// justifyContent: "space-between",
-				marginBottom: "20px",
-				// backgroundColor: "#0f0",
+				padding: 0,
 			}}
 		>
 			<div style={{ marginRight: "80px" }}>
@@ -89,166 +92,26 @@ const SecondSection = () => {
 					/>
 					<span style={{ fontSize: "40px", fontWeight: 600 }}>STEPS</span>
 				</div>
-				<div
-					style={{
-						display: "flex",
-						flexDirection: "row",
-						alignItems: "center",
-					}}
-				>
-					<p
-						style={{
-							backgroundColor: "#E50F1C",
-							color: "white",
-							height: "30px",
-							width: "30px",
-							padding: 10,
-							borderRadius: "50px",
-							textAlign: "center",
-							fontSize: "20px",
-							fontWeight: 700,
-						}}
-					>
-						1
-					</p>
-					<hr
-						width='40'
-						size='5'
-						style={{
-							backgroundColor: "#E50F1C",
-							margin: 0,
-							border: "none",
-						}}
-					/>
-					<div
-						style={{
-							boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
-							width: "320px",
-							height: "60px",
-							borderRadius: "10px",
-						}}
-					></div>
-				</div>
-				<div
-					style={{
-						display: "flex",
-						flexDirection: "row",
-						alignItems: "center",
-					}}
-				>
-					<p
-						style={{
-							backgroundColor: "#E9E9E9",
-							color: "black",
-							height: "30px",
-							width: "30px",
-							padding: 10,
-							borderRadius: "50px",
-							textAlign: "center",
-							fontSize: "20px",
-							fontWeight: 700,
-						}}
-					>
-						2
-					</p>
-					<hr
-						width='40'
-						size='5'
-						style={{
-							backgroundColor: "#E9E9E9",
-							margin: 0,
-							border: "none",
-						}}
-					/>
-					<div
-						style={{
-							boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
-							width: "320px",
-							height: "60px",
-							borderRadius: "10px",
-						}}
-					></div>
-				</div>
-				<div
-					style={{
-						display: "flex",
-						flexDirection: "row",
-						alignItems: "center",
-					}}
-				>
-					<p
-						style={{
-							backgroundColor: "#E9E9E9",
-							color: "black",
-							height: "30px",
-							width: "30px",
-							padding: 10,
-							borderRadius: "50px",
-							textAlign: "center",
-							fontSize: "20px",
-							fontWeight: 700,
-						}}
-					>
-						3
-					</p>
-					<hr
-						width='40'
-						size='5'
-						style={{
-							backgroundColor: "#E9E9E9",
-							margin: 0,
-							border: "none",
-						}}
-					/>
-					<div
-						style={{
-							boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
-							width: "320px",
-							height: "60px",
-							borderRadius: "10px",
-						}}
-					></div>
-				</div>
-				<div
-					style={{
-						display: "flex",
-						flexDirection: "row",
-						alignItems: "center",
-					}}
-				>
-					<p
-						style={{
-							backgroundColor: "#E9E9E9",
-							color: "black",
-							height: "30px",
-							width: "30px",
-							padding: 10,
-							borderRadius: "50px",
-							textAlign: "center",
-							fontSize: "20px",
-							fontWeight: 700,
-						}}
-					>
-						4
-					</p>
-					<hr
-						width='40'
-						size='5'
-						style={{
-							backgroundColor: "#E9E9E9",
-							margin: 0,
-							border: "none",
-						}}
-					/>
-					<div
-						style={{
-							boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
-							width: "320px",
-							height: "60px",
-							borderRadius: "10px",
-						}}
-					></div>
-				</div>
+				<StepCard
+					val={1}
+					icon={<PersonAddAltIcon style={{ color: "white" }} />}
+					text={"Create your account"}
+				/>
+				<StepCard
+					val={2}
+					icon={<SportsEsportsIcon style={{ color: "white" }} />}
+					text={"Select a game"}
+				/>
+				<StepCard
+					val={3}
+					icon={<EmojiEventsIcon style={{ color: "white" }} />}
+					text={"Create your first contests or tournament."}
+				/>
+				<StepCard
+					val={4}
+					icon={<AttachMoneyIcon style={{ color: "white" }} />}
+					text={"Share the link with your audience and start earning"}
+				/>
 			</div>
 		</div>
 	);
