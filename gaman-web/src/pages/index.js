@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import FifthSection from "../Components/FifthSection";
 
 import FirstSection from "../Components/FirstSection";
 import Footer from "../Components/Footer";
@@ -17,6 +18,7 @@ function LandingPage() {
 				<SecondSection />
 				<ThirdSection />
 				<FourthSection />
+				<FifthSection />
 			</main>
 			<Footer />
 		</div>

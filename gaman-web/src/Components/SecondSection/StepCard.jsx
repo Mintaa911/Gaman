@@ -1,25 +1,13 @@
 import React from "react";
 
-const Card = ({ val, icon, text }) => {
+const Card = ({ val, icon, text, selected }) => {
 	return (
-		<div
-			style={{
-				display: "flex",
-				flexDirection: "row",
-				alignItems: "center",
-			}}
-		>
+		<div className='step-card-container'>
 			<p
+				className='step'
 				style={{
-					backgroundColor: "#E50F1C",
-					color: "white",
-					height: "30px",
-					width: "30px",
-					padding: 10,
-					borderRadius: "50px",
-					textAlign: "center",
-					fontSize: "20px",
-					fontWeight: 700,
+					backgroundColor: selected ? "#E50F1C" : "#E9E9E9",
+					color: selected ? "white" : "black",
 				}}
 			>
 				{val}
@@ -28,39 +16,13 @@ const Card = ({ val, icon, text }) => {
 				width='40'
 				size='5'
 				style={{
-					backgroundColor: "#E50F1C",
-					margin: 0,
+					backgroundColor: selected ? "#E50F1C" : "#E9E9E9",
 					border: "none",
 				}}
 			/>
-			<div
-				style={{
-					boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
-					width: "320px",
-					height: "60px",
-					borderRadius: "10px",
-					display: "flex",
-					flexDirection: "row",
-					// justifyContent: "sp",
-					alignItems: "center",
-				}}
-			>
-				<div
-					style={{
-						backgroundColor: "#E50F1C",
-						width: "fit-content",
-						padding: 10,
-						borderRadius: 4,
-						display: "flex",
-						flexDirection: "row",
-						justifyContent: "center",
-						marginRight: 20,
-						marginLeft: 10,
-					}}
-				>
-					{icon}
-				</div>
-				<p style={{ fontWeight: 700, fontSize: "18px" }}>{text}</p>
+			<div className='card'>
+				<div className='card-icon'>{icon}</div>
+				<p className='card-text'>{text}</p>
 			</div>
 		</div>
 	);

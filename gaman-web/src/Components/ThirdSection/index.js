@@ -25,7 +25,7 @@ const ThirdSection = () => {
 					paddingTop: "20px",
 				}}
 			>
-				Get INSPIRE WITH OUR TOP CREATORS ON THE PLATFORM
+				GET INSPIRE WITH OUR TOP CREATORS ON THE PLATFORM
 			</p>
 			<div
 				style={{

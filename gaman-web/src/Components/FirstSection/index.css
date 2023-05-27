@@ -1,0 +1,82 @@
+*{
+  padding:0;
+  margin:0;
+}
+#section-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+#blurBackground1 {
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  width: 271px;
+  height: 151px;
+  background:
+    linear-gradient(to bottom right, #E50F1C 0%, white 81%, white 100%);
+  opacity: 0.5;
+  filter: blur(100px);
+}
+#heroText{
+  font-size: 60px;
+  font-weight: 500;
+  width: 600;
+  padding: 0;
+  margin: 0;
+}
+#heroText span {
+  color: #E50F1C;
+}
+#heroSubtext {
+  width: 400;
+  font-weight: 500;
+}
+#section-one-get-started{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+#section-one-get-started button{
+  margin-right: 150px;
+  display: flex;
+  flex-direction: col;
+  align-items: center;
+  background-color: #E50F1C; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
+}
+#section-one-get-started button span{
+  margin-left: 5px;
+}
+
+#blurBackground2{
+  position: absolute;
+  top: 400px;
+  left: 400px;
+  width: 281px;
+  height: 101px;
+  background:
+    linear-gradient(90deg,white 0%,  #E50F1C 20%, white 81%, white 100%);
+  opacity: 0.2;
+  filter: blur(20px);
+}
+
+#blurBackground3{
+  position: absolute;
+  top: 270px;
+  right: 0px;
+  width: 371px;
+  height: 251px;
+  background:
+    linear-gradient(to top left, #E50F1C 0%, white 51%, white 100%);
+  opacity: 0.3;
+}

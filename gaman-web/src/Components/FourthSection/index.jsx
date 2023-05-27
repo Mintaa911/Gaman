@@ -13,7 +13,6 @@ const FourthSection = () => {
 					height: "151px",
 					background:
 						"linear-gradient(to bottom right, #E50F1C 0%, white 81%, white 100%)",
-					// "linear-gradient(.25turn, #E50F1C -38.3%, rgba(146, 0, 0, 0.89) 198.94%), #FFFFFF",
 					opacity: "0.8",
 					filter: "blur(100px)",
 				}}
@@ -32,6 +31,7 @@ const FourthSection = () => {
 						flexGrow: "2",
 						marginTop: 0,
 						padding: 0,
+						position: "relative",
 					}}
 				>
 					<p
@@ -59,6 +59,19 @@ const FourthSection = () => {
 							text={"What makes this different from other platforms? "}
 						/>
 					</div>
+					<div
+						style={{
+							position: "absolute",
+							top: "420px",
+							right: "-70px",
+							width: "271px",
+							height: "51px",
+							background:
+								"linear-gradient(to top left, #E50F1C 0%, white 100%)",
+							opacity: "0.7",
+							filter: "blur(30px)",
+						}}
+					></div>
 				</div>
 			</div>
 		</div>
